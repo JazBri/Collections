@@ -3,6 +3,7 @@ package com.company;
 import java.util.Scanner;
 
 import static com.company.Exercises.showFirstExercise;
+import static com.company.Exercises.showSecondExercise;
 
 public class Main {
 
@@ -12,6 +13,8 @@ public class Main {
         int exercise = scan.nextInt();
         switch(exercise){
             case 1 : showFirstExercise();
+                break;
+            case 2 : showSecondExercise();
                 break;
             default:
                 System.out.println('F');

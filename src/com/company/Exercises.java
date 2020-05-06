@@ -3,6 +3,12 @@ package com.company;
 import com.company.exercice1.ListClass;
 import com.company.exercice1.ListMap;
 import com.company.exercice1.ListSet;
+import com.company.exercise2.Species;
+import com.company.exercise2.Dog;
+import com.company.exercise2.Human;
+import com.company.exercise2.Marathon;
+import com.company.exercise2.Robot;
+import com.company.exercise2.ISprintable;
 
 public final class Exercises {
     public static void showFirstExercise(){
@@ -74,5 +80,21 @@ public final class Exercises {
         //Reverse
     }
 
-    public static void showSecondExercise(){}
+    public static void showSecondExercise(){
+        Dog dog = new Dog();
+        Human human = new Human();
+        Robot robot = new Robot();
+
+        Marathon marathon = new Marathon();
+        marathon.addSpecies(dog);
+        marathon.addSpecies(human);
+        marathon.addSpecies(robot);
+
+        marathon.getList();
+
+
+
+
+
+    }
 }
