@@ -9,6 +9,12 @@ import com.company.exercise2.Human;
 import com.company.exercise2.Marathon;
 import com.company.exercise2.Robot;
 import com.company.exercise2.ISprintable;
+import java.util.ArrayList;
+import java.util.List;
+
+import static com.company.exercise3.Exercise3.removeEvenLength;
+import static com.company.exercise3.Exercise3.showEvenLength;
+import static com.company.exercise4.Lists.sortArray;
 
 public final class Exercises {
     public static void showFirstExercise(){
@@ -84,17 +90,39 @@ public final class Exercises {
         Dog dog = new Dog();
         Human human = new Human();
         Robot robot = new Robot();
-
         Marathon marathon = new Marathon();
         marathon.addSpecies(dog);
         marathon.addSpecies(human);
         marathon.addSpecies(robot);
-
         marathon.getList();
+    }
 
+    public static void showThirdExercise(){
+        ArrayList<String> arrayString = new ArrayList<>();
+        arrayString.add("Dog");
+        arrayString.add("Mouse");
+        arrayString.add("Omen");
+        arrayString.add("Matilda");
+        arrayString.add("Stitch");
 
+        System.out.println("Before");
+        showEvenLength(arrayString);
 
+        System.out.println("\nTo remove");
+        removeEvenLength(arrayString);
 
+        System.out.println("\nAfter");
+        showEvenLength(arrayString);
+    }
 
+    public static void showFourthExercise(){
+        List<Integer> arrayInteger = new ArrayList<>();
+        arrayInteger.add(0);
+        arrayInteger.add(5);
+        arrayInteger.add(6);
+        arrayInteger.add(2);
+        arrayInteger.add(3);
+
+        sortArray(20, arrayInteger);
     }
 }
