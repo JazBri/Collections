@@ -1,4 +1,4 @@
-package com.company;
+package com.company.exercice1;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -34,7 +34,7 @@ public class ListMap {
         this.mapInteger = mapInteger;
     }
 
-    public void iterateLambda(){
+    public void iterateArrow(){
         this.mapInteger.forEach((k, v) -> System.out.println(k + " " + v));
     }
 

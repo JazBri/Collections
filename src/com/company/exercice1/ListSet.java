@@ -1,4 +1,4 @@
-package com.company;
+package com.company.exercice1;
 
 
 import java.util.Iterator;
